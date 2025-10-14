@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>Biodata 5 Orang</title> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+ </head> 
+ <body class="bg-light"> 
+  <div class="container py-5"> 
+   <h1 class="text-center mb-4">Daftar Biodata</h1> 
+   <div class="card mb-3"> 
+    <div class="card-body" id="biodata1"></div> 
+   </div> 
+   <div class="card mb-3"> 
+    <div class="card-body" id="biodata2"></div> 
+   </div> 
+   <div class="card mb-3"> 
+    <div class="card-body" id="biodata3"></div> 
+   </div> 
+   <div class="card mb-3"> 
+    <div class="card-body" id="biodata4"></div> 
+   </div> 
+   <div class="card mb-3"> 
+    <div class="card-body" id="biodata5"></div> 
+   </div> 
+  </div> 
+  <script>
+    
+    const nama1 = "Rell";
+    const umur1 = 18;
+    const alamat1 = "Kaliwadas";
+    const hobi1 = "Ngegame";
+    document.getElementById("biodata1").innerHTML = `
+        <h5>${nama1}</h5>
+        <p>Umur: ${umur1} tahun</p>
+        <p>Alamat: ${alamat1}</p>
+        <p>Hobi: ${hobi1}</p>
+        <img src="parel.JPG" alt="gatau lagi">
+    `;
+
+    
+    const nama2 = "Difa";
+    const umur2 = 17;
+    const alamat2 = "tegal munding";
+    const hobi2 = "masak";
+    document.getElementById("biodata2").innerHTML = `
+        <h5>${nama2}</h5>
+        <p>Umur: ${umur2} tahun</p>
+        <p>Alamat: ${alamat2}</p>
+        <p>Hobi: ${hobi2}</p>
+        <img src="difa.JPG" alt="gatau lagi">
+        `;
+
+    
+    const nama3 = "Sifa";
+    const umur3 = 17;
+    const alamat3 = "cinanas";
+    const hobi3 = "ngegame";
+    document.getElementById("biodata3").innerHTML = `
+        <h5>${nama3}</h5>
+        <p>Umur: ${umur3} tahun</p>
+        <p>Alamat: ${alamat3}</p>
+        <p>Hobi: ${hobi3}</p>
+        <img src="sifa.JPG" alt="gatau lagi">
+    `;
+
+   
+    const nama4 = "Sulis";
+    const umur4 = 17;
+    const alamat4 = "dukuhwiru";
+    const hobi4 = "beres beres";
+    document.getElementById("biodata4").innerHTML = `
+        <h5>${nama4}</h5>
+        <p>Umur: ${umur4} tahun</p>
+        <p>Alamat: ${alamat4}</p>
+        <p>Hobi: ${hobi4}</p>
+        <img src="sulis.JPG" alt="gatau lagi">
+    `;
+
+  
+    const nama5 = "Zila";
+    const umur5 = 18;
+    const alamat5 = "kalilangkap";
+    const hobi5 = "football";
+    document.getElementById("biodata5").innerHTML = `
+        <h5>${nama5}</h5>
+        <p>Umur: ${umur5} tahun</p>
+        <p>Alamat: ${alamat5}</p>
+        <p>Hobi: ${hobi5}</p>
+        <img src="zila.JPG" alt="gatau lagi">
+    `;
+</script> 
+ </body>
+</html>
