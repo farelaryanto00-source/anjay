@@ -1,95 +1,105 @@
 <!doctype html>
 <html lang="id"> 
- <head> 
+<head> 
   <meta charset="UTF-8"> 
   <title>Biodata 5 Orang</title> 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
- </head> 
- <body class="bg-light"> 
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    h1 {
+      font-weight: 700;
+      color: #333;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .biodata-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .biodata-item img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #0d6efd;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
+    .biodata-text h5 {
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #0d6efd;
+    }
+
+    .biodata-text p {
+      margin: 3px 0;
+      color: #555;
+    }
+  </style>
+</head> 
+
+<body> 
   <div class="container py-5"> 
-   <h1 class="text-center mb-4">Daftar Biodata</h1> 
-   <div class="card mb-3"> 
-    <div class="card-body" id="biodata1"></div> 
-   </div> 
-   <div class="card mb-3"> 
-    <div class="card-body" id="biodata2"></div> 
-   </div> 
-   <div class="card mb-3"> 
-    <div class="card-body" id="biodata3"></div> 
-   </div> 
-   <div class="card mb-3"> 
-    <div class="card-body" id="biodata4"></div> 
-   </div> 
-   <div class="card mb-3"> 
-    <div class="card-body" id="biodata5"></div> 
-   </div> 
+    <h1 class="text-center mb-4">Daftar Biodata</h1> 
+
+    <div class="card mb-3">
+      <div class="card-body" id="biodata1"></div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body" id="biodata2"></div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body" id="biodata3"></div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body" id="biodata4"></div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body" id="biodata5"></div>
+    </div>
   </div> 
+
   <script>
-    
-    const nama1 = "Rell";
-    const umur1 = 18;
-    const alamat1 = "Kaliwadas";
-    const hobi1 = "Ngegame";
-    document.getElementById("biodata1").innerHTML = `
-        <h5>${nama1}</h5>
-        <p>Umur: ${umur1} tahun</p>
-        <p>Alamat: ${alamat1}</p>
-        <p>Hobi: ${hobi1}</p>
-        <img src="parel.jpg" alt="gatau lagi">
-    `;
+    const biodata = [
+      { nama: "Rell", umur: 18, alamat: "Kaliwadas", hobi: "Ngegame", foto: "parel.JPG" },
+      { nama: "Difa", umur: 17, alamat: "Tegal Munding", hobi: "Masak", foto: "difa.JPG" },
+      { nama: "Sifa", umur: 17, alamat: "Cinanas", hobi: "Ngegame", foto: "sifa.JPG" },
+      { nama: "Sulis", umur: 17, alamat: "Dukuhwiru", hobi: "Beres-beres", foto: "sulis.JPG" },
+      { nama: "Zila", umur: 18, alamat: "Kalilangkap", hobi: "Football", foto: "zila.JPG" }
+    ];
 
-    
-    const nama2 = "Difa";
-    const umur2 = 17;
-    const alamat2 = "tegal munding";
-    const hobi2 = "masak";
-    document.getElementById("biodata2").innerHTML = `
-        <h5>${nama2}</h5>
-        <p>Umur: ${umur2} tahun</p>
-        <p>Alamat: ${alamat2}</p>
-        <p>Hobi: ${hobi2}</p>
-        <img src="difa.jpg" alt="gatau lagi">
-        `;
-
-    
-    const nama3 = "Sifa";
-    const umur3 = 17;
-    const alamat3 = "cinanas";
-    const hobi3 = "ngegame";
-    document.getElementById("biodata3").innerHTML = `
-        <h5>${nama3}</h5>
-        <p>Umur: ${umur3} tahun</p>
-        <p>Alamat: ${alamat3}</p>
-        <p>Hobi: ${hobi3}</p>
-        <img src="sifa.jpg" alt="gatau lagi">
-    `;
-
-   
-    const nama4 = "Sulis";
-    const umur4 = 17;
-    const alamat4 = "dukuhwiru";
-    const hobi4 = "beres beres";
-    document.getElementById("biodata4").innerHTML = `
-        <h5>${nama4}</h5>
-        <p>Umur: ${umur4} tahun</p>
-        <p>Alamat: ${alamat4}</p>
-        <p>Hobi: ${hobi4}</p>
-        <img src="sulis.jpg" alt="gatau lagi">
-    `;
-
-  
-    const nama5 = "Zila";
-    const umur5 = 18;
-    const alamat5 = "kalilangkap";
-    const hobi5 = "football";
-    document.getElementById("biodata5").innerHTML = `
-        <h5>${nama5}</h5>
-        <p>Umur: ${umur5} tahun</p>
-        <p>Alamat: ${alamat5}</p>
-        <p>Hobi: ${hobi5}</p>
-        <img src="zila.jpg" alt="gatau lagi">
-    `;
-</script> 
- </body>
-
+    biodata.forEach((data, index) => {
+      document.getElementById(`biodata${index + 1}`).innerHTML = `
+        <div class="biodata-item">
+          <img src="${data.foto}" alt="Foto ${data.nama}">
+          <div class="biodata-text">
+            <h5>${data.nama}</h5>
+            <p>Umur: ${data.umur} tahun</p>
+            <p>Alamat: ${data.alamat}</p>
+            <p>Hobi: ${data.hobi}</p>
+          </div>
+        </div>
+      `;
+    });
+  </script> 
+</body>
 </html>
